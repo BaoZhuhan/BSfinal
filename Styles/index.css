@@ -1,62 +1,141 @@
 #main {
-    display: grid; /* 使用网格布局 */
-    grid-template-columns: 2fr 1fr; /* main-left占2份，main-right占1份 */
-    gap: 20px; /* 设置列间距 */
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-columns: 2fr 1fr;
+    /* main-left占2份，main-right占1份 */
+    gap: 20px;
+    /* 设置列间距 */
 }
 
 #main-left {
-    display: grid; /* 使用网格布局 */
-    grid-template-columns: 1fr 1fr; /* 分成两列 */
-    gap: 20px; /* 设置列间距 */
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-columns: 1fr 1fr;
+    /* 分成两列 */
+    gap: 20px;
+    /* 设置列间距 */
 }
 
 #main-left-news,
 #main-right,
-#main-right-notice > div:nth-child(3) {
-    display: grid; /* 使用网格布局 */
+#main-right-notice>div:nth-child(3) {
+    display: grid;
+    /* 使用网格布局 */
 }
 
 #main-left-doctors {
-    grid-column: span 2; /* 跨两列 */
+    grid-column: span 2;
+    /* 跨两列 */
 }
 
 #doc-list {
-    display: grid; /* 使用网格布局 */
-    grid-template-columns: repeat(7, 1fr); /* 分成7列，每列等宽 */
-    gap: 20px; /* 设置列间距 */
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* 自动适应列数，最小宽度200px */
+    gap: 20px;
+    /* 设置列间距 */
+}
+
+#doc-list>div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#doc-list img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#doc-list h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+#doc-list h2 {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+}
+
+#doc-list h3 {
+    font-size: 14px;
+    color: #999;
+    margin: 5px 0;
+}
+
+#doc-list span {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+#doc-list a :not(:first-child) {
+    color: #834B41;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #834B41;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#doc-list a:hover {
+    background-color: #834B41;
+    color: white;
 }
 
 .main-left-link {
-    display: grid; /* 使用网格布局 */
-    grid-template-columns: repeat(2, 1fr); /* 分成两列，每列等宽 */
-    grid-template-rows: auto; /* 行高自动 */
-    gap: 10px; /* 设置网格项之间的间距 */
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-columns: repeat(2, 1fr);
+    /* 分成两列，每列等宽 */
+    grid-template-rows: auto;
+    /* 行高自动 */
+    gap: 10px;
+    /* 设置网格项之间的间距 */
 }
 
 .main-left-link a:nth-child(1),
 .main-left-link a:nth-child(2) {
-    grid-column: span 1; /* 跨一列 */
+    grid-column: span 1;
+    /* 跨一列 */
 }
 
 .main-left-link a:nth-child(n+3) {
-    grid-column: span 2; /* 跨两列 */
+    grid-column: span 2;
+    /* 跨两列 */
 }
 
 #main-right-notice {
-    display: grid; /* 使用网格布局 */
-    grid-template-rows: auto auto 1fr 1fr 1fr; /* 设置行高 */
-    gap: 10px; /* 设置行间距 */
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-rows: auto auto 1fr 1fr 1fr;
+    /* 设置行高 */
+    gap: 10px;
+    /* 设置行间距 */
 }
 
-#main-right-notice > a {
-    grid-row: 1 / 2; /* 占第一行 */
+#main-right-notice>a {
+    grid-row: 1 / 2;
+    /* 占第一行 */
 }
 
-#main-right-notice > div:nth-child(2) {
-    display: grid; /* 使用网格布局 */
-    grid-template-columns: repeat(3, 1fr); /* 分成三列，每列等宽 */
-    gap: 10px; /* 设置列间距 */
-    grid-row: 2 / 3; /* 占第二行 */
+#main-right-notice>div:nth-child(2) {
+    display: grid;
+    /* 使用网格布局 */
+    grid-template-columns: repeat(3, 1fr);
+    /* 分成三列，每列等宽 */
+    gap: 10px;
+    /* 设置列间距 */
+    grid-row: 2 / 3;
+    /* 占第二行 */
 }
 
 /* #main-right-notice > div:nth-child(3) > a {

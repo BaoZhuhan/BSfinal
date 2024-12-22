@@ -8,16 +8,35 @@ a {
     text-decoration: none;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
 #header-link {
     display: flex;
-    justify-content: flex-end; /* 修改为flex-end使其靠右显示 */
+    justify-content: flex-end;
+    /* 修改为flex-end使其靠右显示 */
     align-items: center;
-    gap: 20px; /* 添加间隙 */
+    gap: 20px;
+    /* 添加间隙 */
 }
 
 #header-search {
     display: flex;
-    justify-content: flex-end; /* 修改为flex-end使其靠右显示 */
+    justify-content: flex-end;
+    /* 修改为flex-end使其靠右显示 */
     align-items: center;
 }
 
@@ -26,21 +45,22 @@ a {
     background-color: #006400;
 }
 
-#nav > div {
+#nav>div {
     position: relative;
     flex: 1;
 }
 
-#nav > div > a {
+#nav>div>a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    transition: background-color 0.3s, color 0.3s; /* 添加平滑过渡效果 */
+    transition: background-color 0.3s, color 0.3s;
+    /* 添加平滑过渡效果 */
 }
 
-#nav > div:hover .dropdown {
+#nav>div:hover .dropdown {
     display: block;
 }
 
@@ -55,7 +75,7 @@ a {
     border-radius: 5px;
 }
 
-.dropdown > a {
+.dropdown>a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
@@ -63,11 +83,11 @@ a {
     text-align: center;
 }
 
-.dropdown > a:hover {
+.dropdown>a:hover {
     background-color: #f1f1f1;
 }
 
-#nav > div > a:hover {
+#nav>div>a:hover {
     background-color: #DD9A4A;
     color: #000;
 }
@@ -82,11 +102,8 @@ a {
     margin-top: 20px;
 }
 
-#footer div { 
+#footer div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-
-
