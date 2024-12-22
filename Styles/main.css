@@ -1,0 +1,92 @@
+body {
+    display: grid;
+    grid-template-rows: 120px auto 390px auto 194px;
+}
+
+a {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+#header-link {
+    display: flex;
+    justify-content: flex-end; /* 修改为flex-end使其靠右显示 */
+    align-items: center;
+    gap: 20px; /* 添加间隙 */
+}
+
+#header-search {
+    display: flex;
+    justify-content: flex-end; /* 修改为flex-end使其靠右显示 */
+    align-items: center;
+}
+
+#nav {
+    display: flex;
+    background-color: #006400;
+}
+
+#nav > div {
+    position: relative;
+    flex: 1;
+}
+
+#nav > div > a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s; /* 添加平滑过渡效果 */
+}
+
+#nav > div:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.dropdown > a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
+.dropdown > a:hover {
+    background-color: #f1f1f1;
+}
+
+#nav > div > a:hover {
+    background-color: #DD9A4A;
+    color: #000;
+}
+
+/* 导航条CSS样式 */
+
+#footer {
+    display: grid;
+    width: 100%;
+    background-color: #01753f;
+    color: #a4c2b1;
+    margin-top: 20px;
+}
+
+#footer div { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

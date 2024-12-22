@@ -1,0 +1,140 @@
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#classify {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+    /* 添加空白 */
+}
+
+#classify a {
+    text-decoration: none;
+    color: #834B41;
+    padding: 5px 10px;
+    flex: 1;
+    text-align: center;
+    background-color: #E8C7A4;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#classify a:hover,
+#classify a:focus {
+    background-color: #DD9A4B;
+    color: white;
+}
+
+#classify a.selected {
+    background-color: #DD9A4B;
+    color: white;
+}
+
+#doctor-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.doctor-card {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+#spceific-classify {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+    /* 修改为顶部对齐 */
+    gap: 10px;
+}
+
+#spceific-classify>div:first-child {
+    grid-column: 1;
+    font-weight: bold;
+    /* 加粗 */
+}
+
+#spceific-classify>div:last-child {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#spceific-classify a {
+    text-decoration: none;
+    color: black;
+    /* 未选中时文字颜色为黑色 */
+    padding: 5px 10px;
+    /* background-color: #f8f8f8; */
+}
+
+#spceific-classify a:hover,
+#spceific-classify a.selected {
+    background-color: #DD9A4A;
+    /* 选中时背景色 */
+    color: white;
+    /* 选中时文字颜色为白色 */
+}
+
+#search-doctor {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#search-doctor img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#search-doctor input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#search-doctor input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #834B41;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-doctor input[type="submit"]:hover {
+    background-color: #DD9A4B;
+}
+
+#search-doctor span {
+    margin-left: auto;
+    font-size: 14px;
+    color: #666;
+}
+
+#search-doctor span a {
+    color: #834B41;
+    text-decoration: none;
+}
+
+#search-doctor span a:hover {
+    text-decoration: underline;
+}

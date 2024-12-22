@@ -1,0 +1,64 @@
+#main {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: 2fr 1fr; /* main-left占2份，main-right占1份 */
+    gap: 20px; /* 设置列间距 */
+}
+
+#main-left {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: 1fr 1fr; /* 分成两列 */
+    gap: 20px; /* 设置列间距 */
+}
+
+#main-left-news,
+#main-right,
+#main-right-notice > div:nth-child(3) {
+    display: grid; /* 使用网格布局 */
+}
+
+#main-left-doctors {
+    grid-column: span 2; /* 跨两列 */
+}
+
+#doc-list {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: repeat(7, 1fr); /* 分成7列，每列等宽 */
+    gap: 20px; /* 设置列间距 */
+}
+
+.main-left-link {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: repeat(2, 1fr); /* 分成两列，每列等宽 */
+    grid-template-rows: auto; /* 行高自动 */
+    gap: 10px; /* 设置网格项之间的间距 */
+}
+
+.main-left-link a:nth-child(1),
+.main-left-link a:nth-child(2) {
+    grid-column: span 1; /* 跨一列 */
+}
+
+.main-left-link a:nth-child(n+3) {
+    grid-column: span 2; /* 跨两列 */
+}
+
+#main-right-notice {
+    display: grid; /* 使用网格布局 */
+    grid-template-rows: auto auto 1fr 1fr 1fr; /* 设置行高 */
+    gap: 10px; /* 设置行间距 */
+}
+
+#main-right-notice > a {
+    grid-row: 1 / 2; /* 占第一行 */
+}
+
+#main-right-notice > div:nth-child(2) {
+    display: grid; /* 使用网格布局 */
+    grid-template-columns: repeat(3, 1fr); /* 分成三列，每列等宽 */
+    gap: 10px; /* 设置列间距 */
+    grid-row: 2 / 3; /* 占第二行 */
+}
+
+/* #main-right-notice > div:nth-child(3) > a {
+    grid-row: span 1; 
+} */

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>京州市中医院</title>
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/index.css">
 </head>
 
 <body>
@@ -26,12 +28,10 @@
 
     </div>
     <div id="nav">
-        <div>
-            <a href="#">首页</a>
-        </div>
+        <div><a href="#">首页</a></div>
         <div>
             <a href="#">医院概况</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">医院简介</a>
                 <a href="#">领导架构</a>
                 <a href="#">医院新貌</a>
@@ -39,7 +39,7 @@
         </div>
         <div>
             <a href="#">院务公开</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">医疗机构概况</a>
                 <a href="#">医疗机构环境</a>
                 <a href="#">医疗服务概况</a>
@@ -48,7 +48,7 @@
         </div>
         <div>
             <a href="#">新闻动态</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">新闻简讯</a>
                 <a href="#">医疗讯息</a>
                 <a href="#">媒体讯息</a>
@@ -57,7 +57,7 @@
         </div>
         <div>
             <a href="#">健康教育</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">疾病预防</a>
                 <a href="#">养生食疗</a>
                 <a href="#">健康处方</a>
@@ -66,7 +66,7 @@
         </div>
         <div>
             <a href="#">医院文化</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">医护天地</a>
                 <a href="#">文化生活</a>
                 <a href="#">心灵驿站</a>
@@ -74,7 +74,7 @@
         </div>
         <div>
             <a href="#">视频影音</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">健康科普</a>
                 <a href="#">中医频道</a>
                 <a href="#">专题播报</a>
@@ -82,7 +82,7 @@
         </div>
         <div>
             <a href="#">党团建设</a>
-            <div>
+            <div class="dropdown">
                 <a href="#">党建动态</a>
                 <a href="#">专题教育</a>
                 <a href="#">团支部建设</a>
@@ -113,20 +113,20 @@
                 <a href="#">医院开展消防安全演练</a>
             </div>
             <div id="main-left-doctors">
-                <a href="#">更多</a>
+                <a href="module.html">更多</a>
                 <div id="doc-list">
-                    <div>
-                        <a href="#"></a>
-                        <h1>张伟</h1>
-                        <h2>心内科</h2>
-                        <h3>主任医师</h3>
-                        <span><a href="#">详细</a><a href="#">预约</a></span>
-                    </div>
                     <div>
                         <a href="#"></a>
                         <h1>李娜</h1>
                         <h2>神经外科</h2>
                         <h3>副主任医师</h3>
+                        <span><a href="#">详细</a><a href="#">预约</a></span>
+                    </div>
+                    <div>
+                        <a href="#"></a>
+                        <h1>张伟</h1>
+                        <h2>心内科</h2>
+                        <h3>主任医师</h3>
                         <span><a href="#">详细</a><a href="#">预约</a></span>
                     </div>
                     <div>
@@ -160,14 +160,14 @@
                     <div>
                         <a href="#"></a>
                         <h1>孙丽</h1>
-                        <h2>眼科</h2>
-                        <h3>主任医师</h3>
-                        <span><a href="#">详细</a><a href="#">预约</a></span>
+                        <h2>眼科</h3>
+                            <h3>主任医师</h3>
+                            <span><a href="#">详细</a><a href="#">预约</a></span>
                     </div>
                 </div>
 
             </div>
-            <div>
+            <div class="main-left-link">
                 <a href="#">院务公开</a>
                 <a href="#">更多</a>
                 <a href="#">医疗机构概况</a>
@@ -177,7 +177,7 @@
                 <a href="#">医院财务公开</a>
                 <a href="#">医院收费标准</a>
             </div>
-            <div>
+            <div class="main-left-link">
                 <a href="#">健康教育</a>
                 <a href="#">更多</a>
                 <a href="#">如何预防秋冬季流感</a>
@@ -187,17 +187,17 @@
                 <a href="#">儿童健康教育</a>
                 <a href="#">老年人健康管理</a>
             </div>
-            <div>
+            <div class="main-left-link">
                 <a href="#">医院文化</a>
                 <a href="#">更多</a>
                 <a href="#">医护人员风采</a>
                 <a href="#">医院文化活动</a>
                 <a href="#">医院历史沿革</a>
-                <a href="#">医院荣��展示</a>
+                <a href="#">医院荣誉展示</a>
                 <a href="#">医院文化墙</a>
                 <a href="#">医院文化故事</a>
             </div>
-            <div>
+            <div class="main-left-link">
                 <a href="#">视频影音</a>
                 <a href="#">更多</a>
                 <a href="#">健康科普视频</a>
@@ -207,7 +207,7 @@
                 <a href="#">医生访谈</a>
                 <a href="#">患者故事</a>
             </div>
-            <div>
+            <div class="main-left-link">
                 <a href="#">党团建设</a>
                 <a href="#">更多</a>
                 <a href="#">党建动态</a>
@@ -217,7 +217,7 @@
                 <a href="#">党团活动</a>
                 <a href="#">党团建设成果</a>
             </div>
-            <div>
+            <div class="main-left-link">
                 <a href="#">科研教学</a>
                 <a href="#">更多</a>
                 <a href="#">科研项目介绍</a>
@@ -257,10 +257,10 @@
         <div id="main-footer"></div>
     </div>
     <div id="footer">
-        <div class="footText">
+        <div>
             地址：京州市xx区xx路xx号 | 邮编：xxxxxx <br>
             电话： （总值班：xxxx-xxxxxxxx 医务处：xxxx-xxxxxxxx） | Email:hengyuhan3762@gmail.com<br>
-            版权所有：京州市中医院 ©2024 | 
+            版权所有：京州市中医院 ©2024 |
             <a target="_blank" href="#">浙ICP备xxxxxxxx号-1</a>
             <a target="_blank" href="#">网站建设：Bao Zhuhan</a>
         </div>
