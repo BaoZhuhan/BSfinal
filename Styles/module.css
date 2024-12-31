@@ -9,7 +9,6 @@
     justify-content: space-around;
     padding: 10px;
     gap: 10px;
-    /* 添加空白 */
 }
 
 #classify a {
@@ -26,11 +25,7 @@
 }
 
 #classify a:hover,
-#classify a:focus {
-    background-color: #DD9A4B;
-    color: white;
-}
-
+#classify a:focus,
 #classify a.selected {
     background-color: #DD9A4B;
     color: white;
@@ -82,7 +77,7 @@
     margin-top: 10px;
 }
 
-.doctor-card a :not(:first-child) {
+.doctor-card a:not(:first-child) {
     color: #834B41;
     text-decoration: none;
     padding: 5px 10px;
@@ -100,14 +95,12 @@
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: start;
-    /* 修改为顶部对齐 */
     gap: 10px;
 }
 
 #spceific-classify>div:first-child {
     grid-column: 1;
     font-weight: bold;
-    /* 加粗 */
 }
 
 #spceific-classify>div:last-child {
@@ -120,17 +113,13 @@
 #spceific-classify a {
     text-decoration: none;
     color: black;
-    /* 未选中时文字颜色为黑色 */
     padding: 5px 10px;
-    /* background-color: #f8f8f8; */
 }
 
 #spceific-classify a:hover,
 #spceific-classify a.selected {
     background-color: #DD9A4A;
-    /* 选中时背景色 */
     color: white;
-    /* 选中时文字颜色为白色 */
 }
 
 #search-doctor {

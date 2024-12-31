@@ -1,40 +1,33 @@
 #main {
     display: grid;
-    /* 使用网格布局 */
     grid-template-columns: 2fr 1fr;
-    /* main-left占2份，main-right占1份 */
     gap: 20px;
-    /* 设置列间距 */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #main-left {
     display: grid;
-    /* 使用网格布局 */
     grid-template-columns: 1fr 1fr;
-    /* 分成两列 */
     gap: 20px;
-    /* 设置列间距 */
 }
 
 #main-left-news,
 #main-right,
 #main-right-notice>div:nth-child(3) {
     display: grid;
-    /* 使用网格布局 */
 }
 
 #main-left-doctors {
     grid-column: span 2;
-    /* 跨两列 */
 }
 
 #doc-list {
     display: grid;
-    /* 使用网格布局 */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /* 自动适应列数，最小宽度200px */
     gap: 20px;
-    /* 设置列间距 */
 }
 
 #doc-list>div {
@@ -77,7 +70,7 @@
     margin-top: 10px;
 }
 
-#doc-list a :not(:first-child) {
+#doc-list a:not(:first-child) {
     color: #834B41;
     text-decoration: none;
     padding: 5px 10px;
@@ -93,51 +86,115 @@
 
 .main-left-link {
     display: grid;
-    /* 使用网格布局 */
     grid-template-columns: repeat(2, 1fr);
-    /* 分成两列，每列等宽 */
-    grid-template-rows: auto;
-    /* 行高自动 */
     gap: 10px;
-    /* 设置网格项之间的间距 */
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .main-left-link a:nth-child(1),
 .main-left-link a:nth-child(2) {
     grid-column: span 1;
-    /* 跨一列 */
 }
 
 .main-left-link a:nth-child(n+3) {
     grid-column: span 2;
-    /* 跨两列 */
+}
+
+.main-left-link a:hover {
+    background-color: #834B41;
+    color: white;
 }
 
 #main-right-notice {
     display: grid;
-    /* 使用网格布局 */
     grid-template-rows: auto auto 1fr 1fr 1fr;
-    /* 设置行高 */
     gap: 10px;
-    /* 设置行间距 */
 }
 
 #main-right-notice>a {
     grid-row: 1 / 2;
-    /* 占第一行 */
 }
 
 #main-right-notice>div:nth-child(2) {
     display: grid;
-    /* 使用网格布局 */
     grid-template-columns: repeat(3, 1fr);
-    /* 分成三列，每列等宽 */
     gap: 10px;
-    /* 设置列间距 */
     grid-row: 2 / 3;
-    /* 占第二行 */
 }
 
-/* #main-right-notice > div:nth-child(3) > a {
-    grid-row: span 1; 
-} */
+#main-right-mail {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-right-mail p {
+    color: #834B41;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#main-right-mail a {
+    color: #834B41;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #834B41;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#main-right-mail a:hover {
+    background-color: #834B41;
+    color: white;
+}
+
+.section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 20px;
+    color: #834B41;
+    margin-bottom: 10px;
+}
+
+.section a {
+    display: block;
+    color: #666;
+    margin-bottom: 5px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.section a:hover {
+    color: #834B41;
+}
+
+.section .more-link {
+    text-align: right;
+    margin-top: 10px;
+}
+
+.section .more-link a {
+    color: #834B41;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #834B41;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.section .more-link a:hover {
+    background-color: #834B41;
+    color: white;
+}

@@ -1,119 +1,178 @@
-
 .current-location {
     font-size: 14px;
+    /* 设置字体大小 */
     color: #666;
+    /* 设置字体颜色 */
     margin-bottom: 20px;
+    /* 设置下边距 */
 }
 
 .current-location a {
     color: #834B41;
+    /* 设置链接颜色 */
     text-decoration: none;
+    /* 去掉下划线 */
 }
 
 .current-location a:hover {
     text-decoration: underline;
+    /* 鼠标悬停时显示下划线 */
 }
 
 h1,
 h2,
 h3 {
     color: #834B41;
+    /* 设置标题颜色 */
 }
 
 .btnLookLc {
     display: inline-block;
+    /* 设置为行内块元素 */
     padding: 10px 20px;
+    /* 设置内边距 */
     background-color: #834B41;
+    /* 设置背景颜色 */
     color: white;
+    /* 设置字体颜色 */
     text-decoration: none;
+    /* 去掉下划线 */
     border-radius: 4px;
+    /* 设置圆角 */
     margin-top: 10px;
+    /* 设置上边距 */
 }
 
 .btnLookLc:hover {
     background-color: #DD9A4B;
+    /* 鼠标悬停时改变背景颜色 */
 }
 
 #news-module {
     background-color: #f8f8f8;
+    /* 设置背景颜色 */
     padding: 20px;
+    /* 设置内边距 */
     border-radius: 8px;
+    /* 设置圆角 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 设置阴影 */
     margin-top: 20px;
+    /* 设置上边距 */
 }
 
 #news-module img {
     width: 100%;
+    /* 设置图片宽度 */
     border-radius: 8px;
+    /* 设置圆角 */
 }
 
 #news-module h2 {
     margin-top: 10px;
+    /* 设置上边距 */
     color: #834B41;
+    /* 设置标题颜色 */
 }
 
 #news-module p {
     color: #666;
+    /* 设置字体颜色 */
     line-height: 1.6;
+    /* 设置行高 */
 }
 
 .doctor-list {
     display: grid;
+    /* 设置为网格布局 */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* 设置列模板 */
     gap: 20px;
+    /* 设置网格间距 */
     margin-top: 20px;
+    /* 设置上边距 */
 }
 
 .doctor-card {
     background-color: #fff;
+    /* 设置背景颜色 */
     border: 1px solid #ddd;
+    /* 设置边框 */
     border-radius: 8px;
+    /* 设置圆角 */
     padding: 20px;
+    /* 设置内边距 */
     text-align: center;
+    /* 设置文本居中 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 设置阴影 */
 }
 
 .doctor-card img {
     width: 100px;
+    /* 设置图片宽度 */
     height: 100px;
+    /* 设置图片高度 */
     border-radius: 50%;
+    /* 设置圆角为圆形 */
     margin-bottom: 10px;
+    /* 设置下边距 */
 }
 
 .doctor-card h1 {
     font-size: 18px;
+    /* 设置字体大小 */
     color: #333;
+    /* 设置字体颜色 */
     margin: 10px 0;
+    /* 设置上下边距 */
 }
 
 .doctor-card h2 {
     font-size: 16px;
+    /* 设置字体大小 */
     color: #666;
+    /* 设置字体颜色 */
     margin: 5px 0;
+    /* 设置上下边距 */
 }
 
 .doctor-card h3 {
     font-size: 14px;
+    /* 设置字体大小 */
     color: #999;
+    /* 设置字体颜色 */
     margin: 5px 0;
+    /* 设置上下边距 */
 }
 
 .doctor-card span {
     display: flex;
+    /* 设置为弹性布局 */
     justify-content: space-around;
+    /* 设置子元素均匀分布 */
     margin-top: 10px;
+    /* 设置上边距 */
 }
 
-.doctor-card a :not(:first-child) {
+.doctor-card a:not(:first-child) {
     color: #834B41;
+    /* 设置链接颜色 */
     text-decoration: none;
+    /* 去掉下划线 */
     padding: 5px 10px;
+    /* 设置内边距 */
     border: 1px solid #834B41;
+    /* 设置边框 */
     border-radius: 4px;
+    /* 设置圆角 */
     transition: background-color 0.3s, color 0.3s;
+    /* 设置过渡效果 */
 }
 
 .doctor-card a:hover {
     background-color: #834B41;
+    /* 鼠标悬停时改变背景颜色 */
     color: white;
+    /* 鼠标悬停时改变字体颜色 */
 }
