@@ -44,6 +44,65 @@
     padding: 20px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    perspective: 1000px; /* 添加透视效果 */
+    position: relative; /* 确保可以包含绝对定位子元素 */
+    min-height: 300px; /* 设置卡片最小高度 */
+}
+
+.doctor-card-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transform-origin: center center; /* 让卡片围绕中心翻转 */
+}
+
+.doctor-card:hover .doctor-card-inner {
+    transform: rotateY(180deg);
+}
+
+.doctor-card-front,
+.doctor-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.doctor-card-front {
+    /* 保持现有样式 */
+}
+
+.doctor-card-back {
+    background-color: #fff;
+    color: #333;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card-back a {
+    color: #834B41;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #834B41;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 5px;
+}
+
+.doctor-card-back a:hover {
+    background-color: #834B41;
+    color: white;
 }
 
 .doctor-card img {
