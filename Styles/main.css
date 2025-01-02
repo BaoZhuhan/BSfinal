@@ -12,6 +12,7 @@ body {
 /* 链接的基本样式 */
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* main区域的样式 */
@@ -29,17 +30,9 @@ a {
     display: flex;
     flex-direction: row;
     background-image: url('../images/header-background.png');
-}
-#header-blank {
-    flex: 1;
-}
-
-#header-logo {
-    flex: 1;
-}
-
-#header-mask {
-    flex: 1;
+    margin: 0; /* 确保没有外边距 */
+    padding: 0; /* 确保没有内边距 */
+    border: none; /* 确保没有边框 */
 }
 
 /* header链接的样式 */
@@ -114,9 +107,29 @@ a {
     color: #000;
 }
 
+#banner {
+    position: relative;
+    overflow: hidden;
+    height: 390px; /* 确保banner高度固定 */
+}
+
 #banner img {
-    max-width: 100%;
+    position: absolute;
+    width: 100%;
     height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+#banner img.active {
+    transform: translateX(0);
+}
+
+#banner img.next {
+    transform: translateX(100%);
+}
+
+#banner img.prev {
+    transform: translateX(-100%);
 }
 
 /* 页脚的样式 */

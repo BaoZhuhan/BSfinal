@@ -23,6 +23,31 @@
     display: grid;
 }
 
+#main-left-banner {
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* 保持与原先大小一致 */
+}
+
+#main-left-banner img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+#main-left-banner img.active {
+    transform: translateX(0);
+}
+
+#main-left-banner img.next {
+    transform: translateX(100%);
+}
+
+#main-left-banner img.prev {
+    transform: translateX(-100%);
+}
+
 #main-left-banner img {
     max-width: 100%;
     height: auto;
@@ -113,33 +138,48 @@
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     color: #333;
     transition: background-color 0.3s, color 0.3s;
+    position: relative;
 }
 
 /* main左侧链接区域每个链接的样式 */
-.main-left-link a:nth-child(1),
+.main-left-link a:nth-child(1) {
+    grid-column: span 1;
+    color: #01753F;
+    font-weight: bold;
+}
+
 .main-left-link a:nth-child(2) {
     grid-column: span 1;
+    text-align: right;
+    color: #834B41;
 }
 
 /* main左侧链接区域每个链接的样式 */
 .main-left-link a:nth-child(n+3) {
     grid-column: span 2;
+    padding: 5px 0;
 }
 
 /* main左侧链接区域悬停时的样式 */
 .main-left-link a:hover {
-    background-color: #834B41;
-    color: white;
+    color: #D58D38;
+}
+
+
+
+#main-right-mail,
+#main-right-notice {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* main右侧通知区域的样式 */
 #main-right-notice {
     display: grid;
-    grid-template-rows: auto auto 1fr ;
+    grid-template-rows: auto auto 1fr;
     gap: 10px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
 }
 
 /* main右侧通知区域链接的样式 */
@@ -168,14 +208,6 @@
 /* main右侧通知区域链接悬停时的样式 */
 #main-right-notice a:hover {
     color: #DD9A4A;
-}
-
-/* main右侧邮件区域的样式 */
-#main-right-mail {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* main右侧邮件区域文字的样式 */
