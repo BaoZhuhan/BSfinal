@@ -26,13 +26,16 @@ a {
     margin: 20px auto; /* 修改此行，使得#main左右居中 */
 }
 
+
 #header {
     display: flex;
     flex-direction: row;
     background-image: url('../images/header-background.png');
-    margin: 0; /* 确保没有外边距 */
-    padding: 0; /* 确保没有内边距 */
-    border: none; /* 确保没有边框 */
+    background-size: cover;
+}
+
+#header-mask {
+    margin-left: auto;
 }
 
 /* header链接的样式 */

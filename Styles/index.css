@@ -23,10 +23,30 @@
     display: grid;
 }
 
+#main-left-news {
+    display: grid;
+    gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#main-left-news a {
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#main-left-news a:hover {
+    background-color: #f1f1f1;
+    color: #834B41;
+}
+
 #main-left-banner {
     position: relative;
     overflow: hidden;
-    height: 300px; /* 保持与原先大小一致 */
+    height: 300px; 
 }
 
 #main-left-banner img {
@@ -112,19 +132,17 @@
 }
 
 /* 医生操作链接的样式 */
-#doc-list a:not(:first-child) {
+#doc-list a {
     color: #834B41;
     text-decoration: none;
     padding: 5px 10px;
-    border: 1px solid #834B41;
-    border-radius: 4px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 /* 医生操作链接悬停时的样式 */
 #doc-list a:hover {
-    background-color: #834B41;
-    color: white;
+    /* background-color: #834B41; */
+    color: #D58D38;
 }
 
 /* main左侧链接区域的样式 */
@@ -165,7 +183,29 @@
     color: #D58D38;
 }
 
+#news-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
 
+#news-nav a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #834B41;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#news-nav a:hover {
+    background-color: #f1f1f1;
+    color: #D58D38;
+}
+
+#main-right {
+    gap: 20px;
+}
 
 #main-right-mail,
 #main-right-notice {
