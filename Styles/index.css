@@ -1,6 +1,7 @@
+/* main区域的样式 */
 #main {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 2fr 300px;
     gap: 20px;
     background-color: #f8f8f8;
     padding: 20px;
@@ -8,28 +9,38 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* main左侧区域的样式 */
 #main-left {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* main左侧新闻、右侧和右侧通知的样式 */
 #main-left-news,
 #main-right,
 #main-right-notice>div:nth-child(3) {
     display: grid;
 }
 
+#main-left-banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* main左侧医生区域的样式 */
 #main-left-doctors {
     grid-column: span 2;
 }
 
+/* 医生列表的样式 */
 #doc-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
+/* 医生列表每个医生的样式 */
 #doc-list>div {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -39,6 +50,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* 医生图片的样式 */
 #doc-list img {
     width: 100px;
     height: 100px;
@@ -46,30 +58,35 @@
     margin-bottom: 10px;
 }
 
+/* 医生名字的样式 */
 #doc-list h1 {
     font-size: 18px;
     color: #333;
     margin: 10px 0;
 }
 
+/* 医生科室的样式 */
 #doc-list h2 {
     font-size: 16px;
     color: #666;
     margin: 5px 0;
 }
 
+/* 医生职称的样式 */
 #doc-list h3 {
     font-size: 14px;
     color: #999;
     margin: 5px 0;
 }
 
+/* 医生操作链接的样式 */
 #doc-list span {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
 }
 
+/* 医生操作链接的样式 */
 #doc-list a:not(:first-child) {
     color: #834B41;
     text-decoration: none;
@@ -79,11 +96,13 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* 医生操作链接悬停时的样式 */
 #doc-list a:hover {
     background-color: #834B41;
     color: white;
 }
 
+/* main左侧链接区域的样式 */
 .main-left-link {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -96,37 +115,62 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* main左侧链接区域每个链接的样式 */
 .main-left-link a:nth-child(1),
 .main-left-link a:nth-child(2) {
     grid-column: span 1;
 }
 
+/* main左侧链接区域每个链接的样式 */
 .main-left-link a:nth-child(n+3) {
     grid-column: span 2;
 }
 
+/* main左侧链接区域悬停时的样式 */
 .main-left-link a:hover {
     background-color: #834B41;
     color: white;
 }
 
+/* main右侧通知区域的样式 */
 #main-right-notice {
     display: grid;
-    grid-template-rows: auto auto 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr ;
     gap: 10px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
 }
 
+/* main右侧通知区域链接的样式 */
 #main-right-notice>a {
     grid-row: 1 / 2;
+    color: #834B41;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
+/* main右侧通知区域第二个div的样式 */
 #main-right-notice>div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-row: 2 / 3;
+    margin-top: 10px;
 }
 
+/* main右侧通知区域第三个div的样式 */
+#main-right-notice>div:nth-child(3) {
+    margin-top: 10px;
+}
+
+/* main右侧通知区域链接悬停时的样式 */
+#main-right-notice a:hover {
+    color: #DD9A4A;
+}
+
+/* main右侧邮件区域的样式 */
 #main-right-mail {
     background-color: #fff;
     padding: 20px;
@@ -134,12 +178,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* main右侧邮件区域文字的样式 */
 #main-right-mail p {
     color: #834B41;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
+/* main右侧邮件区域链接的样式 */
 #main-right-mail a {
     color: #834B41;
     text-decoration: none;
@@ -149,11 +195,13 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* main右侧邮件区域链接悬停时的样式 */
 #main-right-mail a:hover {
     background-color: #834B41;
     color: white;
 }
 
+/* section区域的样式 */
 .section {
     background-color: #fff;
     padding: 20px;
@@ -162,12 +210,14 @@
     margin-bottom: 20px;
 }
 
+/* section标题的样式 */
 .section h2 {
     font-size: 20px;
     color: #834B41;
     margin-bottom: 10px;
 }
 
+/* section链接的样式 */
 .section a {
     display: block;
     color: #666;
@@ -176,15 +226,18 @@
     transition: color 0.3s;
 }
 
+/* section链接悬停时的样式 */
 .section a:hover {
     color: #834B41;
 }
 
+/* section更多链接的样式 */
 .section .more-link {
     text-align: right;
     margin-top: 10px;
 }
 
+/* section更多链接的样式 */
 .section .more-link a {
     color: #834B41;
     text-decoration: none;
@@ -194,7 +247,22 @@
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* section更多链接悬停时的样式 */
 .section .more-link a:hover {
     background-color: #834B41;
     color: white;
+}
+
+/* main右侧广告区域的样式 */
+#main-right-ads img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* main右侧广告区域标题的样式 */
+#main-right-ads div {
+    font-size: 18px;
+    color: #834B41;
+    margin-bottom: 10px;
 }
