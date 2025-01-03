@@ -96,6 +96,8 @@ a {
 #nav {
     display: flex;
     background-color: #006400;
+    position: relative;
+    z-index: 999; /* 确保导航栏在轮播图上方 */
 }
 
 /* 导航栏每个div的样式 */

@@ -59,6 +59,7 @@ h3 {
     /* 设置阴影 */
     margin-top: 20px;
     /* 设置上边距 */
+    position: relative;
 }
 
 #news-module img {
@@ -66,6 +67,27 @@ h3 {
     /* 设置图片宽度 */
     border-radius: 8px;
     /* 设置圆角 */
+    display: block;
+}
+
+#news-module .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 33%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#news-module .overlay h2,
+#news-module .overlay p {
+    margin: 0;
 }
 
 #news-module h2 {
@@ -76,7 +98,7 @@ h3 {
 }
 
 #news-module p {
-    color: #666;
+    color: #ffffff;
     /* 设置字体颜色 */
     line-height: 1.6;
     /* 设置行高 */
@@ -155,25 +177,20 @@ h3 {
     /* 设置上边距 */
 }
 
-.doctor-card a:not(:first-child) {
+.doctor-card a {
     color: #834B41;
     /* 设置链接颜色 */
     text-decoration: none;
     /* 去掉下划线 */
     padding: 5px 10px;
     /* 设置内边距 */
-    border: 1px solid #834B41;
-    /* 设置边框 */
-    border-radius: 4px;
-    /* 设置圆角 */
     transition: background-color 0.3s, color 0.3s;
     /* 设置过渡效果 */
 }
 
-.doctor-card a:hover {
-    background-color: #834B41;
+.doctor-card a :hover {
     /* 鼠标悬停时改变背景颜色 */
-    color: white;
+    color: #D58D38;
     /* 鼠标悬停时改变字体颜色 */
 }
 

@@ -24,6 +24,7 @@
     justify-content: center;
 }
 
+#main-enter-detail a:hover,
 #classify a:hover,
 #classify a:focus,
 #classify a.selected {
@@ -70,10 +71,6 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-}
-
-.doctor-card-front {
-    /* 保持现有样式 */
 }
 
 .doctor-card-back {
