@@ -338,3 +338,14 @@
     color: #834B41;
     margin-bottom: 10px;
 }
+
+#main-right-clock {
+    font-size: 20px;
+    color: #01753F;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

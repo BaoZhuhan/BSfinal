@@ -53,6 +53,15 @@ a {
     align-items: center;
 }
 
+#header-search input[type="text"]:last-child {
+    background-color: #006400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 /* 导航栏的样式 */
 #nav {
     display: flex;

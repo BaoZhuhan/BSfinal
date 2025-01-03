@@ -176,3 +176,69 @@ h3 {
     color: white;
     /* 鼠标悬停时改变字体颜色 */
 }
+
+#comment {
+    margin-top: 20px;
+    /* 设置上边距 */
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    /* 设置为列方向的弹性布局 */
+    gap: 10px;
+    /* 设置元素间距 */
+    margin-bottom: 20px;
+    /* 设置下边距 */
+}
+
+#comment-form input,
+#comment-form textarea {
+    padding: 10px;
+    /* 设置内边距 */
+    border: 1px solid #ddd;
+    /* 设置边框 */
+    border-radius: 4px;
+    /* 设置圆角 */
+}
+
+#comment-form button {
+    padding: 10px 20px;
+    /* 设置内边距 */
+    background-color: #834B41;
+    /* 设置背景颜色 */
+    color: white;
+    /* 设置字体颜色 */
+    border: none;
+    /* 去掉边框 */
+    border-radius: 4px;
+    /* 设置圆角 */
+    cursor: pointer;
+    /* 设置鼠标指针 */
+}
+
+#comment-form button:hover {
+    background-color: #DD9A4B;
+    /* 鼠标悬停时改变背景颜色 */
+}
+
+.comment {
+    border-bottom: 1px solid #ddd;
+    /* 设置下边框 */
+    padding: 10px 0;
+    /* 设置上下内边距 */
+}
+
+.comment h4 {
+    margin: 0;
+    /* 去掉外边距 */
+    color: #834B41;
+    /* 设置颜色 */
+}
+
+.comment p {
+    margin: 5px 0 0 0;
+    /* 设置外边距 */
+    color: #666;
+    /* 设置颜色 */
+}
