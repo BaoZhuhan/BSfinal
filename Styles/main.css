@@ -49,8 +49,38 @@ a {
 /* header搜索框的样式 */
 #header-search {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
+    padding: 10px; /* 缩小一倍 */
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#header-search img {
+    width: 25px; /* 缩小一倍 */
+    height: 25px; /* 缩小一倍 */
+    border-radius: 50%;
+    margin-right: 5px; /* 缩小一倍 */
+}
+
+#header-search input[type="text"] {
+    width: 150px; /* 缩小一倍 */
+    padding: 5px; /* 缩小一倍 */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 5px; /* 缩小一倍 */
+}
+
+#header-search input[type="submit"] {
+    padding: 5px 10px; /* 缩小一倍 */
+    background-color: #834B41;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#header-search input[type="submit"]:hover {
+    background-color: #DD9A4B;
 }
 
 #header-search input[type="text"]:last-child {
